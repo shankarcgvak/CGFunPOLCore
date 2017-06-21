@@ -1,0 +1,18 @@
+{
+  "title": "UnitOfWork",
+  "copyright": "DataOpt",
+  "description": "customized transaction unit for saving multiple/single table information",
+  "language": "en-US",
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "FunPOL.Service.Contract": "1.0.0-*",
+    "NETStandard.Library": "1.6.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

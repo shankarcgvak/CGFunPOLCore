@@ -1,0 +1,60 @@
+{
+  "title": "Test ",
+  "version": "1.0.0-*",
+  "copyright": "DataOpt",
+  "description": "test project for reviewing all the methods are returning proper data with the Code coverage",
+  "language": "en-US",
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "version": "1.0.1",
+      "type": "platform"
+    },
+    "Microsoft.AspNetCore.Diagnostics": "1.0.0",
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
+    "Microsoft.Extensions.Logging.Console": "1.0.0",
+    "xunit": "2.2.0",
+    "FunPOL.Repository.Contract": "1.0.0-*",
+    "FunPOL.Service.Contract": "1.0.0-*",
+    "FunPOL.UnitOfWork": "1.0.0-*",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.1.2",
+    "FunPOL.Repository": "1.0.0-*",
+    "FunPOL.Services": "1.0.0-*",
+    "FunPOL_App": "1.0.0-*"
+  },
+
+  "tools": {
+    "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.0.0-preview2-final"
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": [
+        "dotnet5.6",
+        "portable-net45+win8"
+      ]
+    }
+  },
+
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "preserveCompilationContext": true
+  },
+
+  "runtimeOptions": {
+    "configProperties": {
+      "System.GC.Server": true
+    }
+  },
+
+  "publishOptions": {
+    "include": [
+      "wwwroot",
+      "web.config"
+    ]
+  },
+
+  "scripts": {
+    "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
+  }
+}

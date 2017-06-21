@@ -1,0 +1,19 @@
+{
+  "title": "Services",
+  "copyright": "DataOpt",
+  "description": "Services for handling the Business logic for accessing the Database layer from Presentation layer",
+  "language": "en-US",
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "FunPOL.Repository.Contract": "1.0.0-*",
+    "FunPOL.Service.Contract": "1.0.0-*",
+    "NETStandard.Library": "1.6.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}
