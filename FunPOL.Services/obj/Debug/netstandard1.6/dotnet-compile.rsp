@@ -1,5 +1,5 @@
---temp-output:E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Services\obj\Debug\netstandard1.6\
---out:E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Services\bin\Debug\netstandard1.6\FunPOL.Services.dll
+--temp-output:C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Services\obj\Debug\netstandard1.6\
+--out:C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Services\bin\Debug\netstandard1.6\FunPOL.Services.dll
 --define:DEBUG
 --define:TRACE
 --define:NETSTANDARD1_6
@@ -59,10 +59,10 @@
 --reference:C:\Users\Shankar\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Shankar\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Shankar\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---reference:E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Model\bin\Debug\netstandard1.6\FunPOL.Model.dll
---reference:E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository.Contract\bin\Debug\netstandard1.6\FunPOL.Repository.Contract.dll
---reference:E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Service.Contract\bin\Debug\netstandard1.6\FunPOL.Service.Contract.dll
-E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Services\Class1.cs
-E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Services\CompanyService.cs
-E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Services\UserService.cs
-E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Services\Properties\AssemblyInfo.cs
+--reference:C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Model\bin\Debug\netstandard1.6\FunPOL.Model.dll
+--reference:C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository.Contract\bin\Debug\netstandard1.6\FunPOL.Repository.Contract.dll
+--reference:C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Service.Contract\bin\Debug\netstandard1.6\FunPOL.Service.Contract.dll
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Services\Class1.cs
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Services\CompanyService.cs
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Services\UserService.cs
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Services\Properties\AssemblyInfo.cs

@@ -1,5 +1,5 @@
---temp-output:E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository.Contract\obj\Debug\netstandard1.6\
---out:E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository.Contract\bin\Debug\netstandard1.6\FunPOL.Repository.Contract.dll
+--temp-output:C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository.Contract\obj\Debug\netstandard1.6\
+--out:C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository.Contract\bin\Debug\netstandard1.6\FunPOL.Repository.Contract.dll
 --define:DEBUG
 --define:TRACE
 --define:NETSTANDARD1_6
@@ -59,8 +59,8 @@
 --reference:C:\Users\Shankar\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Shankar\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Shankar\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---reference:E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Model\bin\Debug\netstandard1.6\FunPOL.Model.dll
-E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository.Contract\ICompanyRepository.cs
-E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository.Contract\IRepository.cs
-E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository.Contract\IUserRepository.cs
-E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository.Contract\Properties\AssemblyInfo.cs
+--reference:C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Model\bin\Debug\netstandard1.6\FunPOL.Model.dll
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository.Contract\ICompanyRepository.cs
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository.Contract\IRepository.cs
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository.Contract\IUserRepository.cs
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository.Contract\Properties\AssemblyInfo.cs

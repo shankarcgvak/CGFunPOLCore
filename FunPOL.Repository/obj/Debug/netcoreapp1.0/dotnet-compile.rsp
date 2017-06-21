@@ -1,5 +1,5 @@
---temp-output:E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository\obj\Debug\netcoreapp1.0\
---out:E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository\bin\Debug\netcoreapp1.0\FunPOL.Repository.dll
+--temp-output:C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository\obj\Debug\netcoreapp1.0\
+--out:C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository\bin\Debug\netcoreapp1.0\FunPOL.Repository.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -127,9 +127,9 @@
 --reference:C:\Users\Shankar\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Shankar\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Shankar\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---reference:E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Model\bin\Debug\netstandard1.6\FunPOL.Model.dll
---reference:E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository.Contract\bin\Debug\netstandard1.6\FunPOL.Repository.Contract.dll
---resource:"E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository\obj\Debug\netcoreapp1.0\FunPOL.Repositorydotnet-compile.deps.json",FunPOL.Repository.deps.json
-E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository\CompanyRepository.cs
-E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository\UserRepository.cs
-E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Repository\Utilities\BaseDataAccess.cs
+--reference:C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Model\bin\Debug\netstandard1.6\FunPOL.Model.dll
+--reference:C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository.Contract\bin\Debug\netstandard1.6\FunPOL.Repository.Contract.dll
+--resource:"C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository\obj\Debug\netcoreapp1.0\FunPOL.Repositorydotnet-compile.deps.json",FunPOL.Repository.deps.json
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository\CompanyRepository.cs
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository\UserRepository.cs
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository\Utilities\BaseDataAccess.cs

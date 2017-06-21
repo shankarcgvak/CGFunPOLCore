@@ -4,9 +4,14 @@ C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Test\FunPOL.Test.xproj|C:\User
 C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Test\FunPOL.Test.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Service.Contract\FunPOL.Service.Contract.xproj
 C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Test\FunPOL.Test.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Services\FunPOL.Services.xproj
 C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Test\FunPOL.Test.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.UnitOfWork\FunPOL.UnitOfWork.xproj
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Test\FunPOL.Test.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\src\FunPOL_App\FunPOL_App.xproj
 C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository\FunPOL.Repository.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository.Contract\FunPOL.Repository.Contract.xproj
 C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository.Contract\FunPOL.Repository.Contract.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Model\FunPOL.Model.xproj
 C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Service.Contract\FunPOL.Service.Contract.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Model\FunPOL.Model.xproj
 C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Services\FunPOL.Services.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository.Contract\FunPOL.Repository.Contract.xproj
 C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Services\FunPOL.Services.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Service.Contract\FunPOL.Service.Contract.xproj
 C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.UnitOfWork\FunPOL.UnitOfWork.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Service.Contract\FunPOL.Service.Contract.xproj
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\src\FunPOL_App\FunPOL_App.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Repository\FunPOL.Repository.xproj
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\src\FunPOL_App\FunPOL_App.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Services\FunPOL.Services.xproj
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\src\FunPOL_App\FunPOL_App.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.UnitOfWork\FunPOL.UnitOfWork.xproj
+C:\Users\Shankar\Source\Repos\CGFunPOLCore\src\FunPOL_App\FunPOL_App.xproj|C:\Users\Shankar\Source\Repos\CGFunPOLCore\src\FunPOL.Web.Core\FunPOL.Web.Core.xproj

@@ -8,8 +8,8 @@
 -debug:full
 -nostdlib
 -nologo
-"E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Model\obj\Debug\netstandard1.6\dotnet-compile.assemblyinfo.cs"
--out:"E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Model\bin\Debug\netstandard1.6\FunPOL.Model.dll"
+"C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Model\obj\Debug\netstandard1.6\dotnet-compile.assemblyinfo.cs"
+-out:"C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Model\bin\Debug\netstandard1.6\FunPOL.Model.dll"
 -r:"C:\Users\Shankar\.nuget\packages\Microsoft.Win32.Primitives\4.0.1\ref\netstandard1.3\Microsoft.Win32.Primitives.dll"
 -r:"C:\Users\Shankar\.nuget\packages\System.AppContext\4.1.0\ref\netstandard1.6\System.AppContext.dll"
 -r:"C:\Users\Shankar\.nuget\packages\System.Collections\4.0.11\ref\netstandard1.3\System.Collections.dll"
@@ -53,7 +53,7 @@
 -r:"C:\Users\Shankar\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\Shankar\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\Shankar\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
-"E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Model\CompanyDetail.cs"
-"E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Model\UserDetails.cs"
-"E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Model\Properties\AssemblyInfo.cs"
-"E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.Model\Utilities\BaseEntity.cs"
+"C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Model\CompanyDetail.cs"
+"C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Model\UserDetails.cs"
+"C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Model\Properties\AssemblyInfo.cs"
+"C:\Users\Shankar\Source\Repos\CGFunPOLCore\FunPOL.Model\Utilities\BaseEntity.cs"
