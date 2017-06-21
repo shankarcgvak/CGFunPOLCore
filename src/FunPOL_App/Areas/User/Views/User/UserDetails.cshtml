@@ -1,0 +1,273 @@
+﻿@model IEnumerable<UserViewModel>
+@using FunPol.UnitOfWork.ViewModels
+<link href="~/css/jquery.treegrid.css" rel="stylesheet" />
+<style type="text/css">
+    .setWidth {
+        width: 2px !important;
+    }
+
+    .sortHeader:hover {
+        cursor: pointer;
+    }
+
+    #origin {
+        /*background-color: lightgreen;*/
+    }
+
+    .alert {
+        margin-bottom: 0px !important;
+    }
+
+    #origin img, #drop img {
+        margin-top: 3px;
+        margin-left: 5px;
+    }
+
+    #drop {
+        /*background-color: red;*/
+        /*min-height: 120px;*/
+    }
+
+    /*.over {
+        border: solid 5px purple;
+    }*/
+
+    /*.draggable {
+        border: solid 2px gray;
+    }*/
+
+    .remove {
+        width: 80%;
+        /*border-radius: 25px;*/
+        border: 2px solid Black;
+        padding: 15px 15px 15px 15px;
+        margin: 20px 20px 20px 20px;
+        background: #A4D3EE;
+        overflow: visible;
+        box-shadow: 5px 5px 2px #888888;
+        position: relative;
+    }
+
+    #x {
+        position: absolute;
+        background: red;
+        color: white;
+        top: -10px;
+        right: -10px;
+    }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<link href="//datatables.net/download/build/nightly/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.0/jspdf.plugin.autotable.js"></script>
+
+
+<link href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+@*<div id="drop" class="fbox">
+    </div>*@
+
+<div class="top-buffer"></div>
+
+
+
+<div class="dropdown pull-right" id="exportDiv">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Export To
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu"></ul>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading panel-head">Users</div>
+    <div class="panel-body">
+        <div class="tblContainer alert">
+            <table id="tblUser" class="table table-bordered table-striped table-condensed">
+                <thead>
+                    <tr class="titlerow" id="origin" style="min-height:30px;background-color:lightyellow;">
+                        @* Tested for Sorting Disabled *@
+                        <th index="0" class="setWidth sortHeader sorting_disabled colHeader" data-index="0" data-show=true name="Sno" onclick="colHeaderEvent(event)">
+                            
+                            <div class="dropdown pull-left" id="divColHeader">
+                                <span  class="caret dropdown-toggle" data-toggle="dropdown"></span>
+                                <ul class="dropdown-menu"></ul>
+                            </div>
+                        </th>
+                        @* DataColumn Type determines the type that must be loaded in the summary dropdown *@
+                        @* DataIndex is the column Index *@
+                        <th index="1" class="sortHeader draggable sorting_disabled colHeader" data-columnType="text" data-index="1" data-show=true name="Name" data-filterable="true"><span class="sortHeader" data-sort="asc" onclick="sortTable(this)" >Name</span></th>
+                        <th index="2" class="draggable sorting_disabled currency colHeader" data-columnType="number" data-index="2" data-show=true name="Premium" data-filterable="true">Premium</th>
+                        <th index="3" class="draggable sorting_disabled colHeader" data-columnType="number" data-index="3" data-show=true name="Age" data-filterable="false">Age</th>
+                        <th index="4" class="draggable colHeader" data-columnType="text" data-index="4" data-show=true name="Location" data-filterable="true">Location</th>
+                        <th index="5" class="draggable colHeader" data-columnType="text" data-index="5" data-show="true" name="Email" data-filterable="true">Email </th>
+                        <th index="6" class="draggable currency colHeader" data-columnType="number" data-index="6" data-show=true name="Total" data-filterable="false">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="name" data-numer="false">Jack</td>
+                        <td class="premium">100</td>
+                        <td class="age">12</td>
+                        <td class="location">Erode</td>
+                        <td class="email">gokult@g2tsolutions.com</td>
+                        <td class="total">1000.54</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="name" data-numer="false">Jack</td>
+                        <td class="premium">100</td>
+                        <td class="age">12</td>
+                        <td class="location">Erode</td>
+                        <td class="email">gokult@g2tsolutions.com</td>
+                        <td class="total">1000.54</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="name">Chandler</td>
+                        <td class="premium"></td>
+                        <td class="age">56</td>
+                        <td class="location">Tiruchengode</td>
+                        <td class="email">gokult@g2tsolutions.com</td>
+                        <td class="rowDataSd">23444</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="name">Joey</td>
+                        <td class="premium">3000</td>
+                        <td class="age">25</td>
+                        <td class="location">Erode</td>
+                        <td class="email">gokult@g2tsolutions.com</td>
+                        <td class="total">1234</td>
+
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr id="summary" class="datatable-nosort"></tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Edit User</h4>
+            </div>
+            <div class="modal-body">
+                Under Construction
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="divColHeaderModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Show/Hide Columns</h4>
+            </div>
+            <div class="modal-body">
+                <table class="col-menu"></table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<script type="text/javascript">
+    $j12 = jQuery.noConflict();
+</script>*@
+
+@section scripts{
+    <script src="~/js/user.js" asp-append-version="true"></script>
+    <script src="~/js/Custom.js"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/dataTables.bootstrap.min.js"></script>
+    <script src="~/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/js/dataTables.foundation.min.js"></script>
+    <script src="~/js/dataTables.jqueryui.min.js"></script>
+    <script src="~/js/dataTables.material.min.js"></script>
+    <script src="~/js/dataTables.semanticui.min.js"></script>
+    <script src="~/js/dataTables.uikit.min.js"></script>
+}
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+@*<script src="~/js/bootstrap-treeview.js"></script>*@
+<script src="~/js/jquery.treegrid.js"></script>
+<script src="~/js/GroupBy.js"></script>
+
+<script type="text/javascript">
+    $('table#tblUser').initGroupBy();
+
+    var nodeIndex = 0;
+    function InitColumnReorder() {
+        $('#tblUser').dragtable({ maxMovingRows: 1, dragaccept: '.canReorder' });
+    }
+</script>
+
+<style type="text/css">
+    #origin {
+        /*background-color: lightgreen;*/
+    }
+
+        #origin img, #drop img {
+            margin-top: 3px;
+            margin-left: 5px;
+        }
+
+    .alert {
+        margin-bottom: 0px !important;
+    }
+
+    /*#drop {
+        min-height: 120px;
+    }*/
+
+    /*.over {
+        border: solid 5px purple;
+    }*/
+
+    /*.draggable {
+        border: solid 2px gray;
+    }*/
+
+    .removeGroupBy {
+        /*width: 80%;*/
+        /*border-radius: 25px;*/
+        /*border: 2px solid Black;*/
+        /*padding: 15px 15px 15px 15px;*/
+        /*margin: 20px 20px 20px 20px;*/
+        /*background: #A4D3EE;*/
+        overflow: visible;
+        /*box-shadow: 5px 5px 2px #888888;*/
+        position: relative;
+    }
+
+    #x {
+        position: absolute;
+        /*background: red;*/
+        color: black;
+        top: -10px;
+        right: -10px;
+    }
+</style>
+<link href="~/css/dragtable.css" rel="stylesheet" />

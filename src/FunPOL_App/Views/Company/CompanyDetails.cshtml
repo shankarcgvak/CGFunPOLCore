@@ -1,0 +1,30 @@
+﻿@using FunPOL.UnitOfWork.ViewModels
+@model IEnumerable<CompanyViewModel>
+
+<div class="top-buffer"></div>
+<div class="panel panel-primary">
+    <div class="panel-heading panel-head">Company Details</div>
+    <div class="panel-body">
+        <div class="top-buffer"></div>
+        <table id="tblCompany" class="table table-bordered table-striped table-condensed">
+            <thead>
+                <tr>
+                    <th>CompanyName</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.CompanyName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.CompanyEmail)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@section scripts{
+    <script src="~/js/company.js" asp-append-version="true"></script>
+}

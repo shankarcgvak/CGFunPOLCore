@@ -1,0 +1,46 @@
+﻿@model IEnumerable<CompanyViewModel>
+@using FunPol.UnitOfWork.ViewModels
+
+<div class="top-buffer"></div>
+<div class="panel panel-primary">
+    <div class="panel-heading panel-head">Company Details</div>
+    <div class="panel-body">
+        <div class="top-buffer"></div>
+        <table id="tblCompany" class="table table-bordered table-striped table-condensed">
+            <thead>
+                <tr>
+                    <th>CompanyName</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.CompanyName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.CompanyEmail)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="modal fade" id="divColHeaderModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Show/Hide Columns</h4>
+            </div>
+            <div class="modal-body">
+                <table class="col-menu"></table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="~/js/company.js" asp-append-version="true"></script>
+}

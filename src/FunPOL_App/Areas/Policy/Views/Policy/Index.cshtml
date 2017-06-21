@@ -1,0 +1,97 @@
+﻿<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+</button>
+<div id="navbar" class="navbar-collapse collapse">
+    <ul class="menu-level-2 nav navbar-nav">
+        <li class="active"><a href="#">Policy Details </a></li>
+        <li><a href="#">People Details</a></li>
+        <li><a href="#">Payment Details </a></li>
+        <li><a href="#">Contact Details</a></li>
+        <li><a href="#">Applicant  </a></li>
+        <li><a href="#">Notes     </a></li>
+        <li><a href="#">Attachments </a></li>
+        <li><a href="#">Policy Checklist</a></li>
+    </ul>
+</div>
+<!-- Main content -->
+<section class="content">
+    <!-- Main row -->
+    <div class="row">
+        <!-- Left col -->
+        <section class="col-lg-12 connectedSortable">
+            <!-- Custom tabs (Charts with tabs)-->
+            <div class="nav-tabs-custom">
+                <div class="part-1-head">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <input class="form-control" type="text" placeholder="Default input">
+                        </div>
+                        <div class="col-md-5 red-text-1">
+                            (Leave blank if you are capturing a new)
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <!-- /.part-1-head -->
+                <div class="part-2-box">
+                    <h2>Main Member Details :</h2>
+                    <div class="form-main">
+                        <div class="form-group col-md-4">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                    </div>
+                    <!-- /.form-main -->
+                    <div class="form-main">
+                        <div class="form-group col-md-4">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                    </div>
+                    <!-- /.form-main -->
+                    <div class="clearfix"></div>
+                </div>
+                <!-- /.part-2-box -->
+            </div>
+            <!-- /.nav-tabs-custom -->
+        </section>
+        <!-- /.Left col -->
+    </div>
+    <!-- /.row (main row) -->
+</section>
+
+<div class="modal fade" id="divColHeaderModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Show/Hide Columns</h4>
+            </div>
+            <div class="modal-body">
+                <table class="col-menu"></table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
