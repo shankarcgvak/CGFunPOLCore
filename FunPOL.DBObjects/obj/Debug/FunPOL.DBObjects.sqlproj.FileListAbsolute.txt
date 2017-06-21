@@ -1,0 +1,9 @@
+E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.DBObjects\bin\Debug\FunPOL.DBObjects.dacpac
+E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.DBObjects\bin\Debug\FunPOL.DBObjects.dll
+E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.DBObjects\bin\Debug\FunPOL.DBObjects.pdb
+E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.DBObjects\obj\Debug\Model.xml
+E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.DBObjects\obj\Debug\refactor.xml
+E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.DBObjects\obj\Debug\postdeploy.sql
+E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.DBObjects\obj\Debug\predeploy.sql
+E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.DBObjects\obj\Debug\FunPOL.DBObjects.dll
+E:\Projects\FunPol\Code_Latest\FunPOL_App\FunPOL.DBObjects\obj\Debug\FunPOL.DBObjects.pdb
